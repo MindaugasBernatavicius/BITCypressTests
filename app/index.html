@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<p>Hello world!.</p>
+		<br />
+		<br />
+		<input type="text" id="name_input" />
+		<button>Click me</button>
+		<br />
+		<div>
+			<!-- <div>A</div> -->
+		</div>
+		<div>
+			<div>
+				<div>
+					<div>Hello</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		let input = document.getElementById("name_input");
+		let button = document.getElementsByTagName("button")[0];
+		button.addEventListener("click", () => {
+			let value = document.createTextNode("Labas " + input.value + "!");
+			document.body.appendChild(value);
+		});
+	</script>
+</html>
